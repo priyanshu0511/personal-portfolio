@@ -15,7 +15,9 @@ function App() {
  
   return (
     <div className="bg-blue cursor-none">
-      <CustomCursor />
+      <div className="hidden lg:inline-block">
+        <CustomCursor />
+      </div>
       <ToastContainer />
       <BackToTop />
       <Navbar />
