@@ -9,6 +9,9 @@ import clanguage from '../assets/Skills/clanguage.png';
 import python from '../assets/Skills/python.png';
 import java from '../assets/Skills/java.png';
 import firebase from '../assets/Skills/firebase.png';
+import nodejs from '../assets/Skills/nodejs.png';
+import express from '../assets/Skills/express.png'
+import mongodb from '../assets/Skills/mongodb.png'
 import { ReactComponent as TechSVG } from '../assets/coding-3-85.svg'
 import { motion } from 'motion/react';
 
@@ -36,19 +39,19 @@ const Skills = () => {
       id: 4,
       src: html,
       name: 'HTML',
-      message: 'The building blocks of every website — structure made simple.'
+      message: 'The backbone of the web — where structure meets content.'
     },
     {
       id: 5,
       src: css,
       name: 'CSS',
-      message: 'Design magic that transforms bare bones into beautiful layouts.'
+      message: 'Turning plain HTML into pixel-perfect masterpieces.'
     },
     {
       id: 6,
       src: javascript,
       name: 'JavaScript',
-      message: 'Bringing life to the web — animations, logic, and interactivity galore.'
+      message: 'The language of the web — making pages interactive since forever.'
     },
     {
       id: 7,
@@ -64,17 +67,36 @@ const Skills = () => {
     },
     {
       id: 9,
-      src: firebase,
-      name: 'Firebase',
-      message: 'Seamless backend solutions for web and mobile apps — no server needed.'
+      src: nodejs,
+      name: 'Node JS',
+      message: 'JavaScript’s gateway to the backend world — fast and scalable.'
     },
     {
       id: 10,
+      src: express,
+      name: 'Express',
+      message: 'Minimalist backend framework for lightning-fast APIs.'
+    },
+    {
+      id: 11,
+      src: mongodb,
+      name: 'MongoDB',
+      message: 'NoSQL magic — storing data in flexible JSON-like documents.'
+    },
+    {
+      id: 12,
+      src: firebase,
+      name: 'Firebase',
+      message: 'Real-time database and authentication made ridiculously simple.'
+    },
+    {
+      id: 13,
       src: github,
       name: 'GitHub',
-      message: 'Where collaboration meets version control — the coder’s playground.'
+      message: 'Where code lives, collaborates, and conquers.'
     }
   ];
+  
 
 
   return (
@@ -99,25 +121,21 @@ const Skills = () => {
 
         <motion.div variants={{hidden:{opacity:0},show:{opacity:1,transition:{
           staggerChildren:0.10
-        }}}} initial="hidden" whileInView="show" className="grid grid-cols-3 sm:grid-cols-4 gap-6 mt-8 mx-auto xl:mx-0">
+        }}}} initial="hidden" whileInView="show" className="grid grid-cols-3 sm:grid-cols-4 gap-5 mt-8 mx-auto xl:mx-0">
           {technologies.map((item) => (
             <motion.div variants={{hidden:{opacity:0},show:{opacity:1}}}
               key={item.id}
-              className="relative group flex flex-col items-center md:p-4 p-2 bg-darkblue rounded-lg hover:border hover:border-yellow"
+              className="relative group flex flex-col items-center md:p-3 p-1 bg-darkblue rounded-lg hover:border hover:border-yellow"
             >
-              <img src={item.src} alt={item.name} className="md:w-16 md:h-16 h-8 w-8" />
+              <img src={item.src} alt={item.name} className="md:w-12 md:h-12 h-7 w-7" />
               <div className="text-yellow mt-2 md:text-base text-xs">{item.name}</div>
               {/* Hover Message */}
-              <div className="absolute z-40 opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm rounded p-2 bottom-[-70px] w-48 text-center transition-opacity">
+              <div className="absolute z-40 opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm rounded p-1 bottom-[-70px] w-48 text-center transition-opacity">
                 {item.message}
               </div>
             </motion.div>
           ))}
         </motion.div>
-
-
-
-
       </div>
     </div>
   );
