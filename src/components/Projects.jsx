@@ -16,7 +16,7 @@ const Projects = () => {
         {
             id: 1,
             src: RealTimeWhiteBoard,
-            nam: "Real-time Whiteboard Sharing",
+            nam: "RealTime Whiteboard Sharing App",
             github: "https://github.com/priyanshu0511/realtime-whiteboard",
             live: "https://realtime-whiteboard-frontend.vercel.app/",
             bio: 'The Real-time Whiteboard Sharing app allows users to share their digital whiteboard with others in real-time. Built with React and Socket.io, it provides a simple and efficient way for users to present their ideas, drawings, or concepts to others, without the need for collaboration. The app focuses on delivering a smooth and responsive experience for viewers.',
