@@ -3,17 +3,36 @@ import CryptoPlace from '../assets/ProjectPics/CryptoPlace.png'
 import YaniBlogs from '../assets/ProjectPics/YaniBlogs.png'
 import Lyricist from '../assets/ProjectPics/Lyricist.png'
 import WeatherAppReact from '../assets/ProjectPics/WeatherAppReact.png'
-import ImageSearch from '../assets/ProjectPics/ImageSearch.png'
+import RealTimeWhiteBoard from '../assets/ProjectPics/RealTimeWhiteBoard.png'
+import TakeNote from '../assets/ProjectPics/TakeNote.png'
 import { FaGithub } from "react-icons/fa";
 import { DiCode } from "react-icons/di";
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { motion } from 'framer-motion'; // Correct import for framer-motion
+import { motion } from 'framer-motion';
 
 const Projects = () => {
     const projects = [
         {
             id: 1,
+            src: RealTimeWhiteBoard,
+            nam: "Real-time Whiteboard Sharing",
+            github: "https://github.com/priyanshu0511/realtime-whiteboard",
+            live: "https://realtime-whiteboard-frontend.vercel.app/",
+            bio: 'The Real-time Whiteboard Sharing app allows users to share their digital whiteboard with others in real-time. Built with React and Socket.io, it provides a simple and efficient way for users to present their ideas, drawings, or concepts to others, without the need for collaboration. The app focuses on delivering a smooth and responsive experience for viewers.',
+            techUsed: 'React, Socket.io, Node.js, Express, TailwindCSS'
+        },
+        {
+            id: 2,
+            src: TakeNote,
+            nam: "TakeNote App",
+            github: "https://github.com/priyanshu0511/TakeNote",
+            live: "https://take-note-isrj.vercel.app/",
+            bio: 'TakeNote is a sleek and intuitive note-taking app built with the MERN stack. It allows users to securely store and manage their notes, with features like authentication and personalized note organization. Whether for work or study, TakeNote ensures that users can easily create, edit, and access their notes across multiple devices.',
+            techUsed: 'MongoDB, Express, React, Node.js, JWT, TailwindCSS'
+        },
+        {
+            id: 3,
             src: YaniBlogs,
             nam: "Yani Blogs",
             github: "https://github.com/priyanshu0511/yani-blogs",
@@ -22,7 +41,7 @@ const Projects = () => {
             techUsed: 'React.JS, TailwindCSS, Firebase'
         },
         {
-            id: 2,
+            id: 4,
             src: CryptoPlace,
             nam: "Crypto Place",
             github: "https://github.com/priyanshu0511/crypto-place",
@@ -31,7 +50,7 @@ const Projects = () => {
             techUsed: 'React.JS, TailwindCSS'
         },
         {
-            id: 3,
+            id: 5,
             src: Lyricist,
             nam: "Lyricist",
             github: "https://github.com/priyanshu0511/lyricist",
@@ -40,22 +59,13 @@ const Projects = () => {
             techUsed: 'React.JS, CSS'
         },
         {
-            id: 4,
+            id: 6,
             src: WeatherAppReact,
             nam: "Weather-app (React)",
             github: "https://github.com/priyanshu0511/weather-app-react",
             live: "https://weatherbypriyanshu.netlify.app/",
             bio: 'The Weather App, built with React, provides real-time weather updates for any location. Users can check current conditions, forecasts, and detailed weather data with an intuitive, easy-to-use interface, making it a reliable tool for staying informed about the weather anywhere.',
             techUsed: 'React.JS, CSS'
-        },
-        {
-            id: 5,
-            src: ImageSearch,
-            nam: "Image-Search-App",
-            github: "https://github.com/priyanshu0511/image-search-app",
-            live: "https://imagesearchbypriyanshu.netlify.app/",
-            bio: 'The Image Search App, built with HTML, CSS, and JavaScript, allows users to search for images based on keywords. With a simple, user-friendly interface, it delivers high-quality image results quickly, making it easy to find images from a vast online collection.',
-            techUsed: 'HTML, CSS, JavaScript'
         }
     ];
 
