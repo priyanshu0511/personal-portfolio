@@ -1,105 +1,91 @@
-import React from "react";
-import github from "../assets/Skills/github.png";
-import html from "../assets/Skills/html.png";
-import css from "../assets/Skills/css.png";
-import javascript from "../assets/Skills/javascript.png";
-import react from "../assets/Skills/react.png";
-import tailwind from "../assets/Skills/tailwind.png";
-import clanguage from "../assets/Skills/clanguage.png";
-import python from "../assets/Skills/python.png";
-import java from "../assets/Skills/java.png";
-import firebase from "../assets/Skills/firebase.png";
-import nodejs from "../assets/Skills/nodejs.png";
-import express from "../assets/Skills/express.png";
-import mongodb from "../assets/Skills/mongodb.png";
+
 import TechSVG from "../assets/coding-3-85.svg";
 import { motion } from "motion/react";
 
 const Skills = () => {
   const technologies = [
-    {
-      id: 1,
-      src: clanguage,
-      name: "C",
-      message:
-        "The grandparent of modern programming, where logic takes center stage!",
-    },
-    {
-      id: 2,
-      src: java,
-      name: "Java",
-      message:
-        "Write once, run anywhere — the backbone of enterprise solutions.",
-    },
-    {
-      id: 3,
-      src: python,
-      name: "Python",
-      message: "From data to web to AI — Python does it all, effortlessly.",
-    },
-    {
-      id: 4,
-      src: html,
-      name: "HTML",
-      message: "The backbone of the web — where structure meets content.",
-    },
-    {
-      id: 5,
-      src: css,
-      name: "CSS",
-      message: "Turning plain HTML into pixel-perfect masterpieces.",
-    },
-    {
-      id: 6,
-      src: javascript,
-      name: "JavaScript",
-      message:
-        "The language of the web — making pages interactive since forever.",
-    },
-    {
-      id: 7,
-      src: react,
-      name: "React.JS",
-      message: "Component-based wizardry for dynamic and scalable UIs.",
-    },
-    {
-      id: 8,
-      src: tailwind,
-      name: "TailwindCSS",
-      message: "Utility-first styling for sleek, modern designs with ease.",
-    },
-    {
-      id: 9,
-      src: nodejs,
-      name: "Node JS",
-      message: "JavaScript’s gateway to the backend world — fast and scalable.",
-    },
-    {
-      id: 10,
-      src: express,
-      name: "Express",
-      message: "Minimalist backend framework for lightning-fast APIs.",
-    },
-    {
-      id: 11,
-      src: mongodb,
-      name: "MongoDB",
-      message: "NoSQL magic — storing data in flexible JSON-like documents.",
-    },
-    {
-      id: 12,
-      src: firebase,
-      name: "Firebase",
-      message:
-        "Real-time database and authentication made ridiculously simple.",
-    },
-    {
-      id: 13,
-      src: github,
-      name: "GitHub",
-      message: "Where code lives, collaborates, and conquers.",
-    },
-  ];
+  {
+    id: 1,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    name: "React.JS",
+  },
+  {
+    id: 2,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+    name: "Node.js",
+  },
+  {
+    id: 3,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    name: "Express.js",
+  },
+  {
+    id: 4,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    name: "MongoDB",
+  },
+  {
+    id: 5,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    name: "TailwindCSS",
+  },
+  {
+    id: 6,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    name: "TypeScript",
+  },
+  {
+    id: 7,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    name: "JavaScript",
+  },
+  {
+    id: 8,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    name: "Python",
+  },
+  {
+    id: 9,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    name: "Java",
+  },
+  {
+    id: 10,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
+    name: "C",
+  },
+  {
+    id: 11,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    name: "HTML",
+  },
+  {
+    id: 12,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    name: "CSS",
+  },
+  {
+    id: 13,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    name: "Bootstrap",
+  },
+  {
+    id: 14,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    name: "MySQL",
+  },
+  {
+    id: 15,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    name: "Firebase",
+  },
+  {
+    id: 16,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    name: "GitHub",
+  },
+];
+
 
   return (
     <div
@@ -141,25 +127,21 @@ const Skills = () => {
           }}
           initial="hidden"
           whileInView="show"
-          className="grid grid-cols-3 sm:grid-cols-4 gap-5 mt-8 mx-auto xl:mx-0"
+          className="grid grid-cols-4 sm:grid-cols-5 gap-4 md:gap-5 mt-8 mx-auto xl:mx-0"
         >
           {technologies.map((item) => (
             <motion.div
               variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
               key={item.id}
-              className="relative group flex flex-col items-center md:p-3 p-1 bg-darkblue rounded-lg hover:border hover:border-yellow"
+              className="relative group flex flex-col items-center md:p-2 p-1 bg-darkblue rounded-lg hover:-mt-2 hover:mb-2 hover:shadow-[0_10px_20px_rgba(232,241,255,0.3)] transform transition-all duration-200"
             >
               <img
                 src={item.src}
                 alt={item.name}
-                className="md:w-12 md:h-12 h-7 w-7"
+                className="h-7 w-7 md:h-10 md:w-10 pt-2"
               />
-              <div className="text-yellow mt-2 md:text-base text-xs">
+              <div className="text-yellow mt-2 sm:text-base text-xs">
                 {item.name}
-              </div>
-              {/* Hover Message */}
-              <div className="absolute z-40 opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-sm rounded p-1 bottom-[-70px] w-48 text-center transition-opacity">
-                {item.message}
               </div>
             </motion.div>
           ))}
