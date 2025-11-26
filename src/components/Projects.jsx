@@ -7,6 +7,7 @@ import RealTimeWhiteBoard from "../assets/ProjectPics/RealTimeWhiteBoard.png";
 import TakeNote from "../assets/ProjectPics/TakeNote.png";
 import CodeSync from "../assets/ProjectPics/CodeSync.png";
 import LexConnect from "../assets/ProjectPics/LexConnect.png"
+import Prepai from "../assets/ProjectPics/Prepai.png";
 import { FaGithub } from "react-icons/fa";
 import { DiCode } from "react-icons/di";
 import IconButton from "@mui/material/IconButton";
@@ -15,6 +16,15 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
+    {
+    id: 1,
+    src: Prepai,
+    nam: "Prep-Ai",
+    github: "https://github.com/priyanshu0511/prep-ai",
+    live: "https://meetprep-ai.vercel.app/",
+    bio: "Prep-Ai is an AI-powered career prep app offering mock interviews, technical practice, resume analysis, and personalized feedback, delivering secure, responsive, and interactive learning experiences.",
+    techUsed: "Next.js, TailwindCSS, PostgreSQL, Clerk, Drizzle ORM, Gemini AI",
+  },
   {
     id: 1,
     src: LexConnect,
