@@ -14,7 +14,7 @@ import CustomCursor from "./components/common/CustomCursor";
 function App() {
  
   return (
-    <div className="bg-blue cursor-none">
+    <div className="bg-dark min-h-screen text-light-text font-sans cursor-none">
       <div className="hidden lg:inline">
         <CustomCursor />
       </div>

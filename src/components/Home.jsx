@@ -1,20 +1,20 @@
 import React from "react";
 import Button from "./common/Button";
-import CodingImage from "../assets/coding-5-33.svg";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "motion/react";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
+import CodingImage from "../assets/coding-5-33.svg";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="flex justify-around items-center h-screen w-full bg-blue max-h-screen px-5 min-[330px]:px-10 md:px-32"
+      className="flex flex-col lg:flex-row justify-center lg:justify-between items-center min-h-screen w-full bg-dark text-light-text px-5 min-[330px]:px-10 md:px-32 pt-20 overflow-hidden"
     >
-      <div>
-        <div className="flex flex-col gap-3 font-mono mb-16 font-bold">
+      <div className="z-10 w-full lg:w-1/2 flex flex-col justify-center">
+        <div className="flex flex-col gap-4 font-mono mb-12 lg:mb-16 font-bold">
           <motion.div
-            className="text-lightblue text-xl md:text-2xl"
+            className="text-light-text text-xl md:text-2xl font-sans"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}
@@ -22,18 +22,18 @@ const Home = () => {
             Hi there,
           </motion.div>
           <motion.div
-            className="text-lightblue text-2xl md:text-5xl"
+            className="text-light-text text-4xl sm:text-5xl lg:text-7xl font-heading leading-tight"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.5 }}
+            transition={{ duration: 0.75, delay: 0.2 }}
           >
-            My name is <span className="text-yellow">Priyanshu Singh</span>
+            My name is <span className="text-primary block mt-2">Priyanshu Singh</span>
           </motion.div>
           <motion.div
-            className="text-gray text-xl md:text-3xl"
+            className="text-gray-text text-lg sm:text-xl md:text-2xl lg:text-3xl font-sans mt-4 h-16 md:h-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.9 }}
+            transition={{ duration: 0.75, delay: 0.4 }}
           >
             I am a&nbsp;
             <TypeAnimation
@@ -49,39 +49,41 @@ const Home = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "1.875 rem", display: "inline-block" }}
+              className="text-secondary inline-block border-b-2 border-secondary"
               repeat={Infinity}
             />
           </motion.div>
         </div>
+        
         <motion.div
-          className="flex gap-3"
+          className="flex flex-wrap gap-4 lg:gap-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 1.3 }}
+          transition={{ duration: 0.75, delay: 0.6 }}
         >
-          <Link to={"contact"} smooth={true} duration={500}>
-            <Button text={"Get in Touch"} outlined={false} />
+          <Link to={"contact"} smooth={true} duration={500} offset={-80}>
+             <Button text={"Get in Touch"} outlined={false} />
           </Link>
           <a
             href="https://drive.google.com/file/d/1DmXswZWBtWimnKqO4rlhmZy6mc5xkEKM/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button text={"Resume"} outlined={true} />
+             <Button text={"Resume"} outlined={true} />
           </a>
         </motion.div>
       </div>
+
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1.7 }}
-        className="hidden min-[990px]:inline"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.75, delay: 0.8 }}
+        className="hidden lg:flex w-1/2 justify-end z-10"
       >
         <img
           src={CodingImage}
           alt="Coding Illustration"
-          style={{ width: "450px" }}
+          className="w-[450px] xl:w-[550px] drop-shadow-[0_0_40px_rgba(59,130,246,0.15)] hover:scale-105 transition-transform duration-500"
         />
       </motion.div>
     </div>

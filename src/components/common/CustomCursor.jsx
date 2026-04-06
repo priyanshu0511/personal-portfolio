@@ -24,7 +24,7 @@ const CustomCursor = () => {
     <>
       {/* Custom Cursor Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-4 h-4 bg-yellow rounded-full pointer-events-none z-50"
+        className="fixed top-0 left-0 w-4 h-4 bg-primary rounded-full pointer-events-none z-50 mix-blend-difference"
         style={{
           translateX: '-50%',
           translateY: '-50%',
@@ -35,7 +35,7 @@ const CustomCursor = () => {
 
       {/* Smooth Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-6 h-6 border-2 border-lightblue rounded-full pointer-events-none z-40"
+        className="fixed top-0 left-0 w-8 h-8 border-2 border-primary/70 rounded-full pointer-events-none z-40 mix-blend-difference"
         style={{
           translateX: '-50%',
           translateY: '-50%',

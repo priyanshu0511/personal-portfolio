@@ -17,23 +17,23 @@ export default function NavDrawer() {
         open={open}
         onClose={() => setOpen(false)}
       >
-        <div className="links text-lightblue font-medium text-base w-[40vw] p-6 h-screen bg-darkblue">
+        <div className="links font-sans text-light-text font-medium text-base w-[60vw] md:w-[40vw] p-8 h-screen bg-dark-card border-l border-white/5 shadow-2xl">
         {['home', 'about', 'projects', 'skills', 'contact'].map((section) => (
-                            <div className='mb-4' key={section}>
+                            <div className='mb-6' key={section}>
                                 <Link
                                     to={section}
                                     spy={true}
                                     smooth={true}
                                     duration={500}
-                                    offset={-100}
+                                    offset={-80}
                                     onSetActive={() => setActive(section)}
                                     className={`${
                                         active === section
-                                            ? 'text-yellow border-b-2 border-lightblue pb-[1px] inline'
-                                            : 'text-gray hover:text-yellow'
-                                    } hover:cursor-pointer transition-all duration-200`}
+                                            ? 'text-primary'
+                                            : 'text-gray-text hover:text-light-text'
+                                    } hover:cursor-pointer transition-all duration-200 text-lg capitalize tracking-wide`}
                                 >
-                                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                                    {section}
                                 </Link>
                             </div>
                         ))}
