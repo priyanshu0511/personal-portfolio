@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='font-sans'>Made with ❤️ by Priyanshu. &#169; {new Date().getFullYear()}</div>
         <div className='flex gap-4'>
             <a href="https://github.com/priyanshu0511" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer hover:text-primary transition-colors'><FaGithub size={20}/></a>
-            <a href="https://www.linkedin.com/in/priyanshu-singh-0511/" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer hover:text-primary transition-colors'><FaLinkedin size={20}/></a>
+            <a href="https://www.linkedin.com/in/priyanshu-singh-770401260/" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer hover:text-primary transition-colors'><FaLinkedin size={20}/></a>
             <a href="https://www.instagram.com/priyansh.you_/" target="_blank" rel="noopener noreferrer" className='hover:cursor-pointer hover:text-primary transition-colors'><FaInstagram size={20}/></a>
         </div>
     </div>
